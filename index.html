@@ -1,23 +1,78 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nathan Lippi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="home">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
-  <h1 class="page-heading">Posts</h1>
+    <style>
+      * {
+        font-family: "Open Sans";
+        line-height: 1.5em;
+      }
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      .color-accent {
+        color: #598495;
+      }
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      .color-dark-grey {
+        color: #373737;
+      }
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      .color-light-grey {
+        color: #909090;
+      }
 
-</div>
+      .xs-cap-width {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <section class="container xs-cap-width">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="color-dark-grey">hi, my name is nathan</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="color-light-grey">connect</h4>
+          <ul>
+            <li><a target="_blank" href="mailto:nathan.lippi@gmail.com">email</a></li>
+            <li><a target="_blank" href="https://twitter.com/nathanlippi">twitter</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/nathanlippi">linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- finish with the rest of html5bp -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81725066-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+
